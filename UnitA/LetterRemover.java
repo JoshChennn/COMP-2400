@@ -6,14 +6,14 @@ public class LetterRemover {
   // modify the vector so that each word has the first letter removed
   // write the letterRemover function here:
   public static ArrayList<String> letterRemover(ArrayList<String> words) {
-    ArrayList<String> result = new ArrayList<String>();
+    ArrayList<String> result = words;
+    int i = 0;
     for (String word : words) {
         if (word != null && word.length() > 0) {
-            result.add(word.substring(1));
+            result.set(i, word.substring(1));
         }
+        i = i + 1;
     }
-    words = result;
-    System.out.println(words);
     return result;
   }
   
