@@ -10,7 +10,6 @@ void print_string_vector(const std::vector<std::string> &v)
 
 // write the remove_first_letter function here:
 void remove_first_letter(std::vector<std::string> &words) {
-    //words.push_back("test");
     for (std::string &word : words) {
         if (word.size() > 0) {
             word = word.substr(1,word.size()-1);
